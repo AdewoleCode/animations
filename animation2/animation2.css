@@ -1,0 +1,59 @@
+body{
+    overflow: hidden;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.image {
+    height: 100vh;
+    padding: 20px;
+    background: url(./bg.zinochart.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: first;
+    animation-duration: 2.5s;
+    animation-timing-function:ease-out;
+    animation-fill-mode: both;
+}
+
+.title{
+    color: rgb(26, 25, 23);
+    font-size: 70px;
+    padding: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    animation-name: second;
+    animation-delay: 2.5s;
+    animation-duration: 2.5s;
+    animation-timing-function:ease-out;
+    animation-fill-mode: both;
+
+}
+
+@keyframes first {
+    from {
+        opacity: 0%; width: 0%;
+    }
+    to {
+        opacity: 100%; width: 100%;
+    }
+
+}
+
+@keyframes second {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+
+}

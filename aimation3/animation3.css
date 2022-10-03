@@ -1,0 +1,32 @@
+.box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: 1px solid black;
+    animation-name: rotate;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* @keyframes transform {
+    100% {
+        transform: scaleX(2) scaleY(4);
+    }
+} */
+
+/* @keyframes translate {
+    100%{
+        transform: translate(10px, 50px);
+    }
+} */
+
+@keyframes rotate {
+    100% {
+        transform: rotate(180deg);
+    }
+}
